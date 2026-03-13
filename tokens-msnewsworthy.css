@@ -1,0 +1,223 @@
+/**
+ * BROTH3R X MSNEWSWORTHY
+ * ─────────────────────────────────────────────────────────────
+ * THE CREATOR ARCHETYPE - VIBE OPERATIONS DESIGN SYSTEM
+ * 
+ * Principles:
+ * • No words necessary. Be visual first.
+ * • Be eloquent and rare. Switch up the vibe.
+ * • High Frequencies energy throughout.
+ * • Global Hospitality in every interaction.
+ * • Wellness, not corporate.
+ * • Creative expressions, not explanations.
+ * ─────────────────────────────────────────────────────────────
+ */
+
+:root {
+  /* ═══════════════════════════════════════════════════════════
+     VIBE PALETTE - Not colors, but frequencies
+     ═══════════════════════════════════════════════════════════ */
+  
+  /* PRIMARY VIBES */
+  --vibe-grounding: #2E6F40;        /* Wellness, earth, global hospitality */
+  --vibe-frequency: #9D96B8;        /* High frequencies, creativity, elevation */
+  --vibe-canvas: #353839;           /* The creator's canvas - quiet, timeless */
+  --vibe-clarity: #FCFFF7;          /* Premium clarity, warmth, welcome */
+  
+  /* SECONDARY VIBES */
+  --vibe-depth: rgba(46, 111, 64, 0.15);      /* Subtle grounding accents */
+  --vibe-pulse: rgba(157, 150, 184, 0.2);     /* Subtle frequency accents */
+  --vibe-whisper: rgba(252, 255, 247, 0.08);  /* Subtle text hierarchy */
+  --vibe-shadow: rgba(0, 0, 0, 0.3);          /* Premium depth */
+  
+  /* TEXT FREQUENCIES */
+  --text-vibe-primary: var(--vibe-clarity);           /* #FCFFF7 - full voice */
+  --text-vibe-secondary: rgba(252, 255, 247, 0.75);  /* Soft voice */
+  --text-vibe-tertiary: rgba(252, 255, 247, 0.5);    /* Whisper voice */
+  --text-vibe-accent: var(--vibe-grounding);         /* #2E6F40 - emphasis */
+  --text-vibe-rare: var(--vibe-frequency);           /* #9D96B8 - rare moments */
+  
+  /* ═══════════════════════════════════════════════════════════
+     VOICE HIERARCHY - Typography that expresses
+     ═══════════════════════════════════════════════════════════ */
+  
+  --font-rare: 'Space Grotesk', sans-serif;          /* Rare, eloquent, creative */
+  --font-human: 'Inter', -apple-system, sans-serif;  /* Connected, warm, welcoming */
+  
+  /* RARE VOICE SIZES - for expressions, not explanations */
+  --rare-xl: 72px;         /* Commanding expression */
+  --rare-lg: 56px;         /* Powerful statement */
+  --rare-md: 48px;         /* Strong declaration */
+  --rare-sm: 36px;         /* Notable moment */
+  --rare-xs: 28px;         /* Secondary expression */
+  
+  /* HUMAN VOICE SIZES - for connection */
+  --human-lg: 18px;        /* Open invitation */
+  --human-base: 16px;      /* Natural conversation */
+  --human-sm: 14px;        /* Subtle guidance */
+  --human-xs: 12px;        /* Rare metadata */
+  
+  /* BREATHING ROOM - Frequency of space */
+  --breath-touch: 4px;          /* Intimate spacing */
+  --breath-sm: 8px;             /* Close connection */
+  --breath-md: 16px;            /* Natural breathing */
+  --breath-lg: 24px;            /* Comfortable distance */
+  --breath-xl: 32px;            /* Generous space */
+  --breath-2xl: 48px;           /* Breathing room */
+  --breath-3xl: 64px;           /* Freedom */
+  --breath-4xl: 80px;           /* Expansive */
+  --breath-5xl: 120px;          /* Grand opening */
+  --breath-6xl: 160px;          /* Monumental space */
+  
+  /* FREQUENCIES - Animation & Motion */
+  --frequency-fast: 150ms cubic-bezier(0.4, 0, 1, 1);
+  --frequency-base: 300ms cubic-bezier(0.4, 0, 0.2, 1);
+  --frequency-slow: 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  --frequency-contemplative: 800ms cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  
+  /* RADIUS - Softness of the creator */
+  --radius-sharp: 0;       /* Rare punctuation */
+  --radius-subtle: 4px;    /* Gentle touch */
+  --radius-soft: 12px;     /* Welcoming */
+  --radius-round: 16px;    /* Embracing */
+  --radius-full: 9999px;   /* Complete circle */
+  
+  /* WEIGHTS - Emphasis without shouting */
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
+  
+  /* ═══════════════════════════════════════════════════════════
+     VISUAL HIERARCHY - By feeling, not rules
+     ═══════════════════════════════════════════════════════════ */
+  
+  /* RARE MOMENTS - Eloquent and rare */
+  --rare-moment: var(--font-rare) var(--rare-xl) var(--weight-bold) / 1 letter-spacing -0.02em;
+  --rare-statement: var(--font-rare) var(--rare-lg) var(--weight-bold) / 1.1 letter-spacing -0.02em;
+  --rare-declaration: var(--font-rare) var(--rare-md) var(--weight-bold) / 1.2 letter-spacing -0.02em;
+  
+  /* HUMAN CONNECTION - Warm and welcoming */
+  --human-invitation: var(--font-human) var(--human-lg) var(--weight-regular) / 1.8;
+  --human-conversation: var(--font-human) var(--human-base) var(--weight-regular) / 1.6;
+  --human-whisper: var(--font-human) var(--human-sm) var(--weight-regular) / 1.6;
+  
+  /* ═══════════════════════════════════════════════════════════
+     EXPRESSIONS - Not components, but creative pieces
+     ═══════════════════════════════════════════════════════════ */
+  
+  --expression-cta: 
+    var(--font-rare) 
+    var(--human-sm) 
+    var(--weight-semibold) 
+    / 1 
+    letter-spacing 0.08em
+    text-transform uppercase;
+  
+  --expression-label:
+    var(--font-rare)
+    var(--human-xs)
+    var(--weight-semibold)
+    / 1
+    letter-spacing 0.08em
+    text-transform uppercase;
+  
+  /* ═══════════════════════════════════════════════════════════
+     Z-INDEX - Layering consciousness
+     ═══════════════════════════════════════════════════════════ */
+  
+  --z-base: 0;
+  --z-elevated: 10;
+  --z-floating: 100;
+  --z-sticky: 200;
+  --z-modal: 500;
+  --z-top: 999;
+}
+
+/* ═══════════════════════════════════════════════════════════
+   ACCESSIBILITY - Global hospitality for all
+   ═══════════════════════════════════════════════════════════ */
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --frequency-fast: 0ms linear;
+    --frequency-base: 0ms linear;
+    --frequency-slow: 0ms linear;
+    --frequency-contemplative: 0ms linear;
+  }
+}
+
+@media (prefers-contrast: more) {
+  :root {
+    --text-vibe-secondary: rgba(252, 255, 247, 0.85);
+    --text-vibe-tertiary: rgba(252, 255, 247, 0.65);
+  }
+}
+
+/* ═══════════════════════════════════════════════════════════
+   UTILITY EXPRESSIONS - Creative shortcuts
+   ═══════════════════════════════════════════════════════════ */
+
+.rare-moment {
+  font: var(--rare-moment);
+  color: var(--text-vibe-primary);
+}
+
+.rare-statement {
+  font: var(--rare-statement);
+  color: var(--text-vibe-primary);
+}
+
+.rare-declaration {
+  font: var(--rare-declaration);
+  color: var(--text-vibe-primary);
+}
+
+.human-invitation {
+  font: var(--human-invitation);
+  color: var(--text-vibe-secondary);
+}
+
+.human-conversation {
+  font: var(--human-conversation);
+  color: var(--text-vibe-secondary);
+}
+
+.human-whisper {
+  font: var(--human-whisper);
+  color: var(--text-vibe-tertiary);
+}
+
+.text-accent { color: var(--text-vibe-accent); }
+.text-rare { color: var(--text-vibe-rare); }
+.text-primary { color: var(--text-vibe-primary); }
+
+.breathing { margin: var(--breath-lg); }
+.breathing-xl { margin: var(--breath-2xl); }
+.breathing-xxl { margin: var(--breath-3xl); }
+
+/* ═══════════════════════════════════════════════════════════
+   AVATAR-SPECIFIC TOKENS
+   ═══════════════════════════════════════════════════════════ */
+
+/* Jessica (18-24) - Safe spaces, high emoji use, lifestyle soundtrack */
+.vibe-jessica {
+  --dominant-vibe: var(--vibe-frequency);
+  --emoji-prominent: true;
+  --mood: playful, safe, connected;
+}
+
+/* Jonathan (25-30) - Legacy, work hard play hard */
+.vibe-jonathan {
+  --dominant-vibe: var(--vibe-grounding);
+  --emoji-minimal: true;
+  --mood: legacy, ambitious, refined;
+}
+
+/* Amy (27-35) - Music therapy, underground, nostalgia */
+.vibe-amy {
+  --dominant-vibe: var(--vibe-frequency);
+  --emoji-curated: true;
+  --mood: contemplative, authentic, underground;
+}
